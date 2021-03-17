@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.menu.MainActivity" >
+
+    <!--
+                   很容易理解这个文件的作用，就是为菜单添加条目。一个item表示一个条目
+     -->
+
+    <item
+        android:id="@+id/sy1"
+        android:title="实验一：身高计算器" />
+
+    <item
+        android:id="@+id/sy2"
+        android:title="实验二：通讯录" />
+
+
+
+    <item
+        android:id="@+id/main"
+        android:title="首页" />
+
+    <item
+        android:id="@+id/exit"
+        android:title="退出" />
+
+</menu>

@@ -52,11 +52,9 @@ public class Sy1Activity extends MyMenu {
         if (man) p = 5;
         if (height <= (own + p) && height >= (own - p)) {
             msg += "正常";
-        }
-        if (height <= (own + p)) {
+        }else if (height <= (own + p)) {
             msg += "偏胖";
-        }
-        if (height >= (own - p)) {
+        }else if (height >= (own - p)) {
             msg += "偏瘦";
         }
         DialogUtil.dialog(this, msg);

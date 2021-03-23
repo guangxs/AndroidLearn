@@ -1,18 +1,14 @@
 package com.longxin.learn.sy.sy2.core;
 
-import android.Manifest;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.provider.ContactsContract;
-import android.widget.Toast;
-
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.content.pm.PackageManager.PERMISSION_GRANTED;
+
 
 /**
  * @author Long

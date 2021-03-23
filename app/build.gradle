@@ -1,6 +1,17 @@
 apply plugin: 'com.android.application'
 
 android {
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layout/main',
+                    'src/main/res/layout/sy1',
+                    'src/main/res/layout/sy2',
+                    'src/main/res'
+            ]
+        }
+    }
+
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -15,6 +26,10 @@ android {
     }
 
     buildTypes {
+        debug{
+            minifyEnabled false
+            debuggable true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'

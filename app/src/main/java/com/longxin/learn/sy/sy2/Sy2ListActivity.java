@@ -33,7 +33,7 @@ public class Sy2ListActivity extends MyMenu {
         //得到ListView对象
         ListView ls = findViewById(R.id.sy2_sy2_list);
         //得到适配器对象
-        PhoneAdapter adapter=new PhoneAdapter(this, PhoneUtil.getPhoneDTO(this));
+        PhoneAdapter adapter = new PhoneAdapter(this, PhoneUtil.getPhoneDTO(this));
         //为listView设置适配器
         ls.setAdapter(adapter);
     }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="4"
+    android:rowCount="3">
+    <!--
+    columnCount列
+    rowCount行
+    orientation排列方式，horizontal水平，vertical垂直
+  -->
+
+    <!--
+    layout_columnSpan合并列单元格
+    layout_rowSpan合并行单元格
+    layout_gravity="fill"填充
+ -->
+    <TextView
+        android:id="@+id/tx_phoneName"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:text="联系人"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/modify"
+        android:text="修改"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tx_phoneNumber"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:text="手机号码"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/remove"
+        android:text="删除"
+        android:textSize="20sp"/>
+
+</GridLayout>
